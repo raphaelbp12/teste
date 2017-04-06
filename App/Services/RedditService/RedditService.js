@@ -13,6 +13,7 @@ angular.module('App').service('RedditService', ['RedditRestangular', function (R
     self.hot = function (subreddit, limit) {
         console.log("twitch called");
         RedditRestangular.all(subreddit).customGET('hot.json', {'limit': limit}).then(function(response) {
+            console.log('response.data', response.data);
             var found = false;
 
             var predata = {};

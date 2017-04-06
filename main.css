@@ -45,6 +45,7 @@ body a:hover {
 .widget-list-group {
     width: 100%;
     margin-bottom: 0px;
+    background-color: #222;
 }
 
 .widget-list-item {
@@ -60,6 +61,7 @@ body a:hover {
 .widget-list-item-container {
     padding: 10px 0px;
     display: -webkit-box;
+    color: white;
 }
 
 .widget-title-awe {
@@ -147,5 +149,6 @@ body a:hover {
 .scroller {
     overflow: auto;
     max-height: 708px;
+    min-height: 708px;
     padding: 0px;
 }

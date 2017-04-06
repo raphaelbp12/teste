@@ -1,17 +1,23 @@
-<a href="{{ post.data.url }}">
-    <div class="widget-list-item-container">
-        <div style="width: 44px; padding-left: 10px; color: #666">
-            <div style="width: 100%; text-align: center; line-height: 16px"><i class="fa fa-chevron-up" aria-hidden="true" style="font-size: 16px;"></i></div>
-            <div style="width: 100%; text-align: center; font-size: 14px; line-height: 14px">{{ post.data.score }}</div>
-            <div style="width: 100%; text-align: center; line-height: 16px"><i class="fa fa-chevron-down" aria-hidden="true" style="font-size: 16px;"></i></div>
-        </div>
-        <div style="width: 70px; padding-left: 10px;"><img ng-show="validUrl(post.data.thumbnail)" class="img-circle" style="width: 50px; height: 50px" src="{{ post.data.thumbnail }}"/><i ng-show="!validUrl(post.data.thumbnail)" class="fa fa-reddit-alien" aria-hidden="true" style="margin-right: 10px; font-size: 50px;"></i></div>
-        <div style="width: 206px">
-            <div style="line-height: 16px; width: 100%">
-                <div class="widget-reddit-flair"><span>{{ post.data.link_flair_text }}</span><span style="margin-left: 5px; color: #666666">{{ post.data.domain }}</span></div>
-                <div class="widget-item-max-title">{{ post.data.title }}</div>
-                <div class="widget-reddit-flair"><span style="color: #666666">submitted {{ post.data.created*1000 | timeAgo }} by {{ post.data.author }}</span></div>
-            </div>
+<div class="widget-list-item-container">
+    <div style="width: 44px; padding-left: 10px; color: #666">
+        <div style="width: 100%; text-align: center; line-height: 16px"><i class="fa fa-chevron-up" aria-hidden="true"
+                                                                           style="font-size: 16px;"></i></div>
+        <div style="width: 100%; text-align: center; font-size: 14px; line-height: 14px">{{ post.data.score }}</div>
+        <div style="width: 100%; text-align: center; line-height: 16px"><i class="fa fa-chevron-down" aria-hidden="true"
+                                                                           style="font-size: 16px;"></i></div>
+    </div>
+    <div style="width: 70px; padding-left: 10px;"><img ng-show="validUrl(post.data.thumbnail)" class="img-circle"
+                                                       style="width: 50px; height: 50px"
+                                                       src="{{ post.data.thumbnail }}"/><i
+            ng-show="!validUrl(post.data.thumbnail)" class="fa fa-reddit-alien" aria-hidden="true"
+            style="margin-right: 10px; font-size: 50px;"></i></div>
+    <div style="width: 206px">
+        <div style="line-height: 16px; width: 100%">
+            <div class="widget-reddit-flair"><span>{{ post.data.link_flair_text }}</span><span
+                    style="margin-left: 5px; color: #666666">{{ post.data.domain }}</span></div>
+            <div class="widget-item-max-title"><a href="{{ post.data.url }}">{{ post.data.title }}</a></div>
+            <div class="widget-reddit-flair"><span style="color: #666666"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.data.created*1000 | timeAgo }} by {{ post.data.author }}</span> </div>
+            <div class="widget-reddit-flair"><a href="https://www.reddit.com{{ post.data.permalink }}"><span><i class="fa fa-comments" aria-hidden="true"></i> {{ post.data.num_comments }} Comments</span></a></div>
         </div>
     </div>
-</a>
+</div>
