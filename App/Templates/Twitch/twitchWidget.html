@@ -1,0 +1,14 @@
+<div class="widget-awe">
+    <div class="widget-title-awe">
+        <div class="widget-title-text"><i class="fa fa-twitch" aria-hidden="true" style="margin-right: 10px"></i> {{title}}</div>
+        <div class="widget-title-icons"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+    </div>
+    <div class="awe-borderline-gradient"></div>
+    <ul class="widget-list-group scroller"  infinite-scroll="redditService.pagination()" infinite-scroll-distance="1">
+        <li class="widget-list-item" ng-repeat="stream in streams">
+            <div class="row" style="margin: -10px;">
+                <twitch-feed-item stream="stream"></twitch-feed-item>
+            </div>
+        </li>
+    </ul>
+</div>

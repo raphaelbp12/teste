@@ -1,0 +1,57 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="App">
+<head>
+    <title>Awedash</title>
+    <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/ladda/dist/ladda-themeless.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/4230b2d0bb.css">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top nav-awe">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Awedash</a>
+        </div>
+    </div>
+    <div class="awe-borderline-gradient"></div>
+</nav>
+
+<div class="container-fluid main-content" ng-controller="MinMaxCtrl">
+    <!--<div class="row">-->
+        <!--<input name="teste" placeholder="tente" ng-model="twitchNames">-->
+        <!--<button ng-click="search()">Search</button>-->
+        <!--<button ng-click="twitch()">Twitch</button>-->
+        <!--&lt;!&ndash;<pre>{{ twitchService }}</pre>&ndash;&gt;-->
+    <!--</div>-->
+    <div class="row">
+        <twitch-widget title="Twitch" streams="twitchService.streams"></twitch-widget>
+        <reddit-widget ng-repeat="data in redditService.data" title="{{ data.subreddit }}" posts="data.children" reddit-service="redditService"></reddit-widget>
+    </div>
+</div>
+
+<script src="libs/jquery/jquery.js"></script>
+<script src="libs/angular/angular.min.js"></script>
+<script src="libs/angular-auto-validate/dist/jcs-auto-validate.min.js"></script>
+<script src="libs/ladda/dist/spin.min.js"></script>
+<script src="libs/ladda/dist/ladda.min.js"></script>
+<script src="libs/angular-ladda/dist/angular-ladda.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script src="libs/restangular/restangular.min.js"></script>
+<script src="libs/angular-timeago-master/dist/angular-timeago-core.min.js"></script>
+<script src="libs/angular-timeago-master/src/languages/time-ago-language-en_US.js"></script>
+<script src="libs/ngInfiniteScroll/ng-infinite-scroll.min.js"></script>
+
+<script src="App/Constants/twitch.js"></script>
+
+<script src="App/app.js"></script>
+<script src="App/Services/TwitchService/TwitchRestangular.js"></script>
+<script src="App/Services/TwitchService/TwitchService.js"></script>
+<script src="App/Services/RedditService/RedditRestangular.js"></script>
+<script src="App/Services/RedditService/RedditService.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    padding-top: 50px;
+    background-color: #181818;
+}
+
+body a {
+    color: #fff;
+}
+
+body a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-awe {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020c0b+1,05000c+100 */
+    background: #020c0b; /* Old browsers */
+    background: -moz-linear-gradient(left, #020c0b 1%, #05000c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #020c0b 1%,#05000c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #020c0b 1%,#05000c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020c0b', endColorstr='#05000c',GradientType=1 ); /* IE6-9 */
+}
+
+.main-content {
+    padding: 15px 15px;
+}
+
+.stream-username {
+    margin-right: 10px;
+    max-width: 97px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+}
+
+.widget-awe {
+    width: 330px;
+    background-color: #222;
+    margin-left: 24px;
+    margin-top: 24px;
+    float: left;
+}
+
+.widget-list-group {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.widget-list-item {
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid #181818;
+}
+
+.widget-list-item:hover {
+    background-color: #181818;
+}
+
+.widget-list-item-container {
+    padding: 10px 0px;
+    display: -webkit-box;
+}
+
+.widget-title-awe {
+    background-color: #222;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    /*display: flex;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020c0b+1,05000c+100 */
+    background: #020c0b; /* Old browsers */
+    background: -moz-linear-gradient(left, #020c0b 1%, #05000c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #020c0b 1%,#05000c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #020c0b 1%,#05000c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020c0b', endColorstr='#05000c',GradientType=1 ); /* IE6-9 */
+}
+
+.widget-title-text {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    float: left;
+}
+
+.widget-title-icons {
+    float: right;
+    padding-right: 10px;
+}
+
+.widget-title-icons i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.widget-title-icons i:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.awe-borderline-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29f2eb+1,42078c+100 */
+    background: #29f2eb; /* Old browsers */
+    background: -moz-linear-gradient(left, #29f2eb 1%, #42078c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #29f2eb 1%,#42078c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #29f2eb 1%,#42078c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29f2eb', endColorstr='#42078c',GradientType=1 ); /* IE6-9 */
+    height: 1px;
+}
+
+.widget-item-max-title {
+    margin-right: 10px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.widget-reddit-flair {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+}
+.scroller::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+.scroller::-webkit-scrollbar-thumb {
+    background: #555;
+    visibility:hidden;
+}
+.scroller:hover::-webkit-scrollbar-thumb {
+    visibility:visible;
+}
+.scroller {
+    overflow: auto;
+    max-height: 708px;
+    padding: 0px;
+}
