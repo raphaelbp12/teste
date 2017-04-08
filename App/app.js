@@ -63,11 +63,13 @@ angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService'
 
     $scope.redditService.hot('GlobalOffensive', '');
     $scope.redditService.hot('PUBATTLEGROUNDS', '');
+    $scope.redditService.hot('KerbalSpaceProgram', '');
 
     $scope.intervalo = $interval(function() {
         $scope.twitchService.getChannels();
         $scope.redditService.hot('GlobalOffensive', '');
         $scope.redditService.hot('PUBATTLEGROUNDS', '');
+        $scope.redditService.hot('KerbalSpaceProgram', '');
     }, 20000);
 
     $scope.search = function () {
