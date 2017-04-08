@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cffef14-398a-4dd8-bc14-865d74aa465c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html" afterPath="$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html" afterPath="$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html" afterPath="$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.css" afterPath="$PROJECT_DIR$/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +19,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -38,8 +37,8 @@
       <file leaf-file-name="twitchFeedItem.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Templates/Twitch/twitchFeedItem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+            <state relative-caret-position="85">
+              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#a#0;n#!!top" expanded="true" />
@@ -58,8 +57,8 @@
       <file leaf-file-name="redditFeedItem.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -70,6 +69,7 @@
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -91,8 +91,8 @@
       <file leaf-file-name="twitchWidget.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="117" lean-forward="false" selection-start-line="6" selection-start-column="117" selection-end-line="6" selection-end-column="117" />
+            <state relative-caret-position="85">
+              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
@@ -104,8 +104,8 @@
       <file leaf-file-name="redditWidget.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="117" />
+            <state relative-caret-position="85">
+              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -136,14 +136,14 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="119" column="15" lean-forward="false" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
+            <state relative-caret-position="204">
+              <caret line="125" column="44" lean-forward="false" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedditService.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedditService.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/Services/RedditService/RedditService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -163,6 +163,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hover</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -174,15 +179,15 @@
         <option value="$PROJECT_DIR$/App/Templates/Twitch/twitchfeed.html" />
         <option value="$PROJECT_DIR$/App/Services/TwitchService/TwitchService.js" />
         <option value="$PROJECT_DIR$/App/Services/RedditService/RedditRestangular.js" />
-        <option value="$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html" />
         <option value="$PROJECT_DIR$/App/Constants/twitch.js" />
-        <option value="$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html" />
-        <option value="$PROJECT_DIR$/App/Templates/Twitch/twitchFeedItem.html" />
         <option value="$PROJECT_DIR$/App/app.js" />
         <option value="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" />
-        <option value="$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html" />
+        <option value="$PROJECT_DIR$/App/Templates/Twitch/twitchFeedItem.html" />
+        <option value="$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html" />
+        <option value="$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -472,12 +477,12 @@
       <workItem from="1491433473400" duration="2921000" />
       <workItem from="1491448848748" duration="9132000" />
       <workItem from="1491615941773" duration="1155000" />
-      <workItem from="1491627642840" duration="778000" />
+      <workItem from="1491627642840" duration="4013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57629000" />
+    <option name="totallyTimeSpent" value="60864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -910,10 +915,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Templates/Twitch/twitchFeedItem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+        <state relative-caret-position="85">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#a#0;n#!!top" expanded="true" />
@@ -928,45 +941,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="117" lean-forward="false" selection-start-line="6" selection-start-column="117" selection-end-line="6" selection-end-column="117" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Services/RedditService/RedditService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -977,18 +955,11 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="119" column="15" lean-forward="false" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,6 +973,41 @@
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="125" column="44" lean-forward="false" selection-start-line="125" selection-start-column="44" selection-end-line="125" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Services/RedditService/RedditService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

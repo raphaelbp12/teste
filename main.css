@@ -27,7 +27,7 @@ body a:hover {
 
 .stream-username {
     margin-right: 10px;
-    max-width: 97px;
+    max-width: calc(100% - 143px);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -113,6 +113,38 @@ body a:hover {
     background: linear-gradient(to right, #29f2eb 1%,#42078c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29f2eb', endColorstr='#42078c',GradientType=1 ); /* IE6-9 */
     height: 1px;
+}
+
+.awe-borderline-gradient-animated {
+    height: 1px;
+    background: linear-gradient(270deg, #42078c, #29f2eb);
+    background-size: 400% 400%;
+
+    -webkit-animation: AweBorderlineAnimationName 10s ease infinite;
+    -moz-animation: AweBorderlineAnimationName 10s ease infinite;
+    -o-animation: AweBorderlineAnimationName 10s ease infinite;
+    animation: AweBorderlineAnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AweBorderlineAnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AweBorderlineAnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AweBorderlineAnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes AweBorderlineAnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
 
 .widget-item-max-title {
