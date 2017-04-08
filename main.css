@@ -35,11 +35,13 @@ body a:hover {
 }
 
 .widget-awe {
-    width: 330px;
+    width: 400px;
     background-color: #222;
-    margin-left: 24px;
-    margin-top: 24px;
+    /* margin-left: 24px; */
+    /* margin-top: 24px; */
     float: left;
+    border-right: 3px solid #181818;
+    height: 100%;
 }
 
 .widget-list-group {
@@ -115,7 +117,7 @@ body a:hover {
 
 .widget-item-max-title {
     margin-right: 10px;
-    max-width: 200px;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -148,8 +150,7 @@ body a:hover {
 }
 .scroller {
     overflow: auto;
-    max-height: 708px;
-    min-height: 708px;
+    height: 100%;
     padding: 0px;
 }
 
