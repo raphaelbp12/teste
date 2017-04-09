@@ -4,10 +4,8 @@
         <div style="width: 100%; text-align: center; font-size: 14px; line-height: 14px">{{ post.data.score }}</div>
         <div class="reddit-thumbsdown" style="width: 100%; text-align: center; line-height: 16px"><i class="fa fa-chevron-down" aria-hidden="true" style="font-size: 16px;"></i></div>
     </div>
-    <div style="width: 70px; padding-left: 10px; line-height: 61px;"><img ng-show="validUrl(post.data.thumbnail)" class="img-circle"
-                                                       style="width: 50px; height: 50px"
-                                                       src="{{ post.data.thumbnail }}"/><i
-            ng-show="!validUrl(post.data.thumbnail)" class="fa fa-reddit-alien" aria-hidden="true"
+    <div class="widget-list-item-img-container"><div class="widget-list-item-img-50-50"  ng-if="validUrl(post.data.thumbnail)"><div class="ratio img-responsive img-circle" style="background-image: url({{ post.data.thumbnail }});"></div></div>
+        <i ng-show="!validUrl(post.data.thumbnail)" class="fa fa-reddit-alien" aria-hidden="true"
             style="margin-right: 10px; font-size: 50px; vertical-align: middle;"></i></div>
     <div style="width: calc(100% - 124px);">
         <div style="line-height: 16px; width: 100%">

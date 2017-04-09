@@ -17,7 +17,7 @@
             <img src="img/logo.png" style="width: 50px; float: left"> <a class="navbar-brand" href="#">Awedash</a>
         </div>
     </div>
-    <div class="awe-borderline-gradient"></div>
+    <div class="awe-borderline-gradient-animated"></div>
 </nav>
 
 <div class="container-fluid main-content" ng-controller="MinMaxCtrl" style="height: 100%; padding: 0px;">
@@ -28,8 +28,8 @@
         <!--&lt;!&ndash;<pre>{{ twitchService }}</pre>&ndash;&gt;-->
     <!--</div>-->
     <div class="row" style="height: 100%; margin: 0px;">
-        <twitch-widget title="Twitch" streams="twitchService.streams"></twitch-widget>
-        <reddit-widget ng-repeat="data in redditService.data" title="{{ data.subreddit }}" posts="data.children" reddit-service="redditService"></reddit-widget>
+        <div class="twitch-widget widget-awe" title="Twitch" streams="twitchService.streams"></div>
+        <div class="reddit-widget widget-awe" ng-repeat="data in redditService.data" title="{{ data.subreddit }}" posts="data.children" reddit-service="redditService"></div>
     </div>
 </div>
 

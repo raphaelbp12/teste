@@ -20,6 +20,7 @@ angular.module('App').directive('twitchFeedItem', function () {
 
 angular.module('App').directive('twitchWidget', function () {
     return {
+        'restrict': 'AEC',
         'templateUrl': './App/Templates/Twitch/twitchWidget.html',
         'scope': {
             'streams': '=',
@@ -30,6 +31,7 @@ angular.module('App').directive('twitchWidget', function () {
 
 angular.module('App').directive('redditWidget', function () {
     return {
+        'restrict': 'AEC',
         'templateUrl': './App/Templates/Reddit/redditWidget.html',
         'scope': {
             'posts': '=',
