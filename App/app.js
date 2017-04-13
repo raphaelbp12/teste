@@ -9,69 +9,21 @@ angular.module('App', [
     var a = 0;
 });
 
-angular.module('App').directive('twitchFeedItem', function () {
-   return {
-       'templateUrl': './App/Templates/Twitch/twitchFeedItem.html',
-       'scope': {
-           'stream': '='
-       }
-   }
-});
-
-angular.module('App').directive('twitchWidget', function () {
-    return {
-        'restrict': 'AEC',
-        'templateUrl': './App/Templates/Twitch/twitchWidget.html',
-        'scope': {
-            'streams': '=',
-            'title': '@'
-        }
-    }
-});
-
-angular.module('App').directive('redditWidget', function () {
-    return {
-        'restrict': 'AEC',
-        'templateUrl': './App/Templates/Reddit/redditWidget.html',
-        'scope': {
-            'posts': '=',
-            'title': '@',
-            'redditService': '='
-        }
-    }
-});
-
-angular.module('App').directive('redditFeedItem', function () {
-    return {
-        'templateUrl': './App/Templates/Reddit/redditFeedItem.html',
-        'scope': {
-            'post': '='
-        },
-        'controller': function redditFeedItemController($scope) {
-            $scope.validUrl = function (str) {
-                var ret = str.split(".");
-                //console.log("ret", ret);
-                return ret.length > 1;
-            }
-        }
-    }
-});
-
 angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService', '$scope', '$interval', function (TwitchService, RedditService, $scope, $interval) {
     $scope.twitchService = TwitchService;
     $scope.twitchService.getChannels();
 
     $scope.redditService = RedditService;
 
-    $scope.redditService.hot('GlobalOffensive', '');
-    $scope.redditService.hot('PUBATTLEGROUNDS', '');
-    $scope.redditService.hot('KerbalSpaceProgram', '');
+    $scope.redditService.getSubreddit('GlobalOffensive', 'hot', '');
+    $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'hot', '');
+    $scope.redditService.getSubreddit('KerbalSpaceProgram', 'hot', '');
 
     $scope.intervalo = $interval(function() {
         $scope.twitchService.getChannels();
-        $scope.redditService.hot('GlobalOffensive', '');
-        $scope.redditService.hot('PUBATTLEGROUNDS', '');
-        $scope.redditService.hot('KerbalSpaceProgram', '');
+        $scope.redditService.getSubreddit('GlobalOffensive', 'hot', '');
+        $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'hot', '');
+        $scope.redditService.getSubreddit('KerbalSpaceProgram', 'hot', '');
     }, 20000);
 
     $scope.search = function () {
@@ -85,4 +37,8 @@ angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService'
     };
 
     $scope.intervalo;
+
+    $scope.pagination =function () {
+        console.log("$scope.pagination");
+    }
 }]);

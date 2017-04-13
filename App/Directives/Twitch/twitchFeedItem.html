@@ -1,0 +1,16 @@
+<a href="{{ stream.channel.url }}">
+    <div class="widget-list-item-container">
+        <div style="width: 70px; padding-left: 10px;"><img class="img-circle" style="width: 50px" src="{{ stream.channel.logo }}"/></div>
+        <div style="width: calc(100% - 73px);">
+            <div style="display: inline-flex; line-height: 16px; width: 100%;">
+                <div class="stream-username">{{ stream.channel.display_name }}</div>
+                <span class="badge" style="background-color: #ff5b5b;  margin-right: 7px; min-width: initial; padding: 3px 10px;">
+                <span class="glyphicon glyphicon-user" style="font-size: 10px; margin-right: 2px;" aria-hidden="true"></span> {{ stream.viewers }} </span>
+                <span ng-show="stream.channel.mature" class="badge" style="background-color: black; width: 45px;">+ 18</span>
+            </div>
+            <div style="display: inline-flex; line-height: 16px; width: 100%;">
+                <h6 style="font-size: 10px">{{ stream.channel.game }}</h6>
+            </div>
+        </div>
+    </div>
+</a>

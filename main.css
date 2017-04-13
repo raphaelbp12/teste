@@ -48,6 +48,7 @@ body a:hover {
     width: 100%;
     margin-bottom: 0px;
     background-color: #222;
+    padding: 0px;
 }
 
 .widget-list-item {
@@ -183,9 +184,10 @@ body a:hover {
     visibility:visible;
 }
 .scroller {
-    overflow: auto;
+    overflow-y: scroll;
     height: 100%;
     padding: 0px;
+    background-color: #222;
 }
 
 .reddit-thumbsup, .reddit-thumbsdown {
