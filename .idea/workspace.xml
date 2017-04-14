@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cffef14-398a-4dd8-bc14-865d74aa465c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Directives/Twitch/twitchFeedItem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Directives/Twitch/twitchWidget.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html" afterPath="$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/App/Templates/Twitch/twitchFeedItem.html" afterPath="$PROJECT_DIR$/App/Directives/Twitch/twitchFeedItem.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/App/Templates/Twitch/twitchWidget.html" afterPath="$PROJECT_DIR$/App/Directives/Twitch/twitchWidget.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" afterPath="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Services/TwitchService/TwitchService.js" afterPath="$PROJECT_DIR$/App/Services/TwitchService/TwitchService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app.js" afterPath="$PROJECT_DIR$/App/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/ngInfiniteScroll/ng-infinite-scroll.min.js" afterPath="$PROJECT_DIR$/libs/ngInfiniteScroll/ng-infinite-scroll.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.css" afterPath="$PROJECT_DIR$/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -97,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redditWidget.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="redditWidget.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -107,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitchService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Services/TwitchService/TwitchService.js">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            <state relative-caret-position="255">
+              <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -173,7 +158,6 @@
         <option value="$PROJECT_DIR$/App/Services/RedditService/RedditRestangular.js" />
         <option value="$PROJECT_DIR$/App/Constants/twitch.js" />
         <option value="$PROJECT_DIR$/App/Templates/Reddit/redditFeedItem.html" />
-        <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/App/Templates/Twitch/twitchFeedItem.html" />
         <option value="$PROJECT_DIR$/libs/ngInfiniteScroll/ng-infinite-scroll.min.js" />
         <option value="$PROJECT_DIR$/App/Templates/Reddit/redditWidget.html" />
@@ -188,6 +172,7 @@
         <option value="$PROJECT_DIR$/App/app.js" />
         <option value="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" />
         <option value="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -230,38 +215,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AWEDASH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AWEDASH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AWEDASH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AWEDASH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AWEDASH" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngInfiniteScroll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,12 +430,12 @@
       <workItem from="1492111807425" duration="5374000" />
       <workItem from="1492142979823" duration="599000" />
       <workItem from="1492152648408" duration="365000" />
-      <workItem from="1492153095458" duration="4656000" />
+      <workItem from="1492153095458" duration="5353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93006000" />
+    <option name="totallyTimeSpent" value="93703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -496,7 +449,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25158563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25158563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -801,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="189" column="27" lean-forward="false" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/ngInfiniteScroll/ng-infinite-scroll.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -910,6 +856,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding />
         </state>
       </provider>

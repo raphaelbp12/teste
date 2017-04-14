@@ -12,6 +12,11 @@ body a:hover {
     text-decoration: none;
 }
 
+body a:visited {
+    color: #777;
+    text-decoration: none;
+}
+
 .nav-awe {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020c0b+1,05000c+100 */
     background: #020c0b; /* Old browsers */
