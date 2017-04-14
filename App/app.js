@@ -15,15 +15,15 @@ angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService'
 
     $scope.redditService = RedditService;
 
-    $scope.redditService.getSubreddit('GlobalOffensive', 'hot', '');
-    $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'hot', '');
-    $scope.redditService.getSubreddit('KerbalSpaceProgram', 'hot', '');
+    $scope.redditService.getSubreddit('GlobalOffensive', 'hot', '', false);
+    $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'hot', '', false);
+    $scope.redditService.getSubreddit('KerbalSpaceProgram', 'hot', '', false);
 
     $scope.intervalo = $interval(function() {
         $scope.twitchService.getChannels();
-        $scope.redditService.getSubreddit('GlobalOffensive', 'hot', '');
-        $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'hot', '');
-        $scope.redditService.getSubreddit('KerbalSpaceProgram', 'hot', '');
+        $scope.redditService.getUpdate('GlobalOffensive');
+        $scope.redditService.getUpdate('PUBATTLEGROUNDS');
+        $scope.redditService.getUpdate('KerbalSpaceProgram');
     }, 20000);
 
     $scope.search = function () {

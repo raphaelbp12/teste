@@ -2,74 +2,91 @@ angular.module('App').service('RedditService', ['RedditRestangular', function (R
 
     var self = this;
 
-    self.teste = 'teste';
+    self.loading = false;
 
     self.data = [];
 
-    self.pagination = function(){
-      console.log('pagination');
-    };
-
-    self.getSubreddit = function (subreddit, topic, after) {
-        //console.log("reddit called");
-        RedditRestangular.all(subreddit).customGET(topic+'.json', {'after': after}).then(function(response) {
-            console.log('response.data', response.data);
-            var found = false;
-
-            var predata = {};
-            predata.children = response.data.children;
-            predata.before = response.data.before;
-            predata.after = response.data.after;
-            predata.subreddit = subreddit;
-
-            self.addPosts(predata);
+    self.getUpdate = function(subreddit){
+        self.data.forEach(function (data) {
+            if (data.subreddit && data.subreddit === subreddit) {
+                for(var i = 0; i < data.after.length - 1; i++){
+                    //console.log('getUpdate', subreddit, after);
+                    self.getSubreddit(data.subreddit, data.topic, data.after[i], false);
+                }
+            }
         });
     };
 
-    self.addPosts = function (posts){
+    self.pagination = function(subreddit){
+
+        self.data.forEach(function (data) {
+            if (data.subreddit && data.subreddit === subreddit) {
+                if(!self.loading){
+                    console.log('pagination');
+                    self.getSubreddit(data.subreddit, data.topic, data.after[data.after.length - 1], true);
+                }
+            }
+        });
+    };
+
+    self.getSubreddit = function (subreddit, topic, after, pagination) {
+        //console.log("reddit called");
+        var predata = {};
+        self.loading = true;
+
+        RedditRestangular.all(subreddit).customGET(topic+'.json', {'after': after}).then(function(response) {
+            console.log('response.data', response.data);
+            var found = false;
+            predata.children = response.data.children;
+            predata.before = response.data.before;
+            predata.after = ['', response.data.after];
+            predata.subreddit = subreddit;
+            predata.topic = topic;
+            predata.newPosts = [];
+
+            self.loading = false;
+
+            self.addPosts(predata, pagination);
+        });
+    };
+
+    self.addPosts = function (posts, pagination){
         var found = false;
         var newPosts = [];
 
         self.data.forEach(function (data, indexData) {
-            if(data.subreddit && data.subreddit == posts.subreddit){
-                //console.log('found', true);
+            if(data.subreddit && data.subreddit === posts.subreddit){
                 found = true;
                 var foundID = false;
-                self.data[indexData].after = posts.after;
 
+                if(!self.data[indexData].after.includes(posts.after[1]) && pagination){
+                    self.data[indexData].after.push(posts.after[1]);
+                }
 
-                //console.log('self.data[indexData]', self.data[indexData]);
 
                 posts.children.forEach(function (postToAdd) {
                     data.children.forEach(function (child, indexChild) {
                         if(child.data.id == postToAdd.data.id){
-                            //console.log('foundID', true);
-                            //console.log('child.data.subreddit_id', child.data.id);
-                            //console.log('postToAdd.data.subreddit_id', postToAdd.data.id);
-
                             foundID = true;
                             self.data[indexData].children[indexChild] = postToAdd;
                         }
                     });
                     if(!foundID){
-                        //console.log('foundID', false);
                         newPosts.push(postToAdd);
                     }
                 });
 
-                self.data[indexData].newPosts = newPosts;
+                if(pagination){
+                    self.data[indexData].children = self.data[indexData].children.concat(newPosts);
+                } else {
+                    self.data[indexData].newPosts = self.data[indexData].newPosts.concat(newPosts);
+                }
+                self.data[indexData].topic = posts.topic;
             }
         });
 
         if (!found){
             self.data.push(posts);
         }
-    };
-
-    self.searchGame = function (names) {
-        //console.log("reddit called");
-        RedditRestangular.all('search').customGET('games', {query: names}).then(function(response) {
-            //console.log("search.games", response.games);
-        });
     };
 }]);
