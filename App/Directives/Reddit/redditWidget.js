@@ -7,13 +7,13 @@ angular.module('App').directive('redditWidget', function () {
             'title': '@',
             'subreddit': '@',
             'after': '=',
-            'newPosts': '='
+            'newPosts': '=',
+            'topic': '@'
         },
         'controller': function redditWidgetController($scope,RedditService) {
             $scope.redditService = RedditService;
 
             $scope.topics = ['hot', 'new', 'top', 'rising', 'controversial', 'gilded', 'promoted'];
-            $scope.selectedTopic = 'hot';
 
             $scope.randomId = Math.floor((Math.random()*10000)+1);
 
@@ -26,6 +26,7 @@ angular.module('App').directive('redditWidget', function () {
             $scope.changeTopic = function (topic) {
                 RedditService.changeTopic($scope.subreddit, topic);
                 $scope.triggerMenu();
+                $scope.topic = topic;
             };
 
             $scope.showNotification = function(eleId){

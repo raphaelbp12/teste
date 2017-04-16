@@ -29,7 +29,7 @@
     <!--</div>-->
     <div class="row" style="height: 100%; margin: 0px;">
         <div class="twitch-widget widget-awe" title="Twitch" streams="twitchService.streams"></div>
-        <div class="reddit-widget widget-awe" ng-repeat="data in redditService.data" title="{{ data.subreddit }}" posts="data.children" new-posts="data.newPosts" subreddit="{{ data.subreddit }}" after="data.after" ></div>
+        <div class="reddit-widget widget-awe" ng-repeat="data in redditService.data" title="{{ data.subreddit }}" posts="data.children" new-posts="data.newPosts" subreddit="{{ data.subreddit }}" after="data.after" topic="{{data.topic}}"></div>
     </div>
 </div>
 

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cffef14-398a-4dd8-bc14-865d74aa465c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html" afterPath="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js" afterPath="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" afterPath="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/app.js" afterPath="$PROJECT_DIR$/App/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.css" afterPath="$PROJECT_DIR$/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="61" lean-forward="false" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+            <state relative-caret-position="269">
+              <caret line="31" column="235" lean-forward="false" selection-start-line="31" selection-start-column="235" selection-end-line="31" selection-end-column="235" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,8 +68,8 @@
       <file leaf-file-name="redditFeedItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="69" lean-forward="false" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
+            <state relative-caret-position="0">
+              <caret line="0" column="63" lean-forward="true" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -80,9 +78,12 @@
       <file leaf-file-name="redditWidget.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +91,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="287" column="42" lean-forward="false" selection-start-line="287" selection-start-column="42" selection-end-line="287" selection-end-column="42" />
+            <state relative-caret-position="345">
+              <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -100,8 +101,8 @@
       <file leaf-file-name="redditWidget.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="476">
+              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -110,7 +111,7 @@
       <file leaf-file-name="RedditService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Services/RedditService/RedditService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="1278">
               <caret line="126" column="59" lean-forward="false" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
               <folding />
             </state>
@@ -139,6 +140,7 @@
       <find>infiniteScroll</find>
       <find>parent</find>
       <find>scrollDistance</find>
+      <find>max-tit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,10 +166,10 @@
         <option value="$PROJECT_DIR$/App/Services/TwitchService/TwitchService.js" />
         <option value="$PROJECT_DIR$/App/app.js" />
         <option value="$PROJECT_DIR$/App/Directives/Tools/scrollToTopWhen.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js" />
-        <option value="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html" />
         <option value="$PROJECT_DIR$/App/Services/RedditService/RedditService.js" />
+        <option value="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html" />
         <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
@@ -418,12 +420,12 @@
       <workItem from="1492192665186" duration="616000" />
       <workItem from="1492207099146" duration="3717000" />
       <workItem from="1492277982960" duration="8297000" />
-      <workItem from="1492300132482" duration="5137000" />
+      <workItem from="1492300132482" duration="6664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111776000" />
+    <option name="totallyTimeSpent" value="113303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -762,6 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,22 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="69" lean-forward="false" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -798,10 +785,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Directives/Tools/scrollToTopWhen.js" />
+    <entry file="file://$PROJECT_DIR$/App/Services/RedditService/RedditService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1278">
+          <caret line="126" column="59" lean-forward="false" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="63" lean-forward="true" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="61" lean-forward="false" selection-start-line="57" selection-start-column="61" selection-end-line="57" selection-end-column="61" />
+        <state relative-caret-position="269">
+          <caret line="31" column="235" lean-forward="false" selection-start-line="31" selection-start-column="235" selection-end-line="31" selection-end-column="235" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -811,34 +822,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditWidget.js">
+    <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditFeedItem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Services/RedditService/RedditService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="126" column="59" lean-forward="false" selection-start-line="126" selection-start-column="59" selection-end-line="126" selection-end-column="59" />
+        <state relative-caret-position="68">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/Directives/Reddit/redditWidget.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="287" column="42" lean-forward="false" selection-start-line="287" selection-start-column="42" selection-end-line="287" selection-end-column="42" />
+        <state relative-caret-position="345">
+          <caret line="98" column="33" lean-forward="false" selection-start-line="98" selection-start-column="33" selection-end-line="98" selection-end-column="33" />
           <folding />
         </state>
       </provider>

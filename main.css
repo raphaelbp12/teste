@@ -21,9 +21,9 @@ body a:visited {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020c0b+1,05000c+100 */
     background: #020c0b; /* Old browsers */
     background: -moz-linear-gradient(left, #020c0b 1%, #05000c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #020c0b 1%,#05000c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #020c0b 1%,#05000c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020c0b', endColorstr='#05000c',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, #020c0b 1%, #05000c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #020c0b 1%, #05000c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020c0b', endColorstr='#05000c', GradientType=1); /* IE6-9 */
 }
 
 .main-content {
@@ -83,9 +83,9 @@ body a:visited {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#020c0b+1,05000c+100 */
     background: #020c0b; /* Old browsers */
     background: -moz-linear-gradient(left, #020c0b 1%, #05000c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #020c0b 1%,#05000c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #020c0b 1%,#05000c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020c0b', endColorstr='#05000c',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, #020c0b 1%, #05000c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #020c0b 1%, #05000c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020c0b', endColorstr='#05000c', GradientType=1); /* IE6-9 */
 }
 
 .widget-title-text {
@@ -93,6 +93,10 @@ body a:visited {
     font-size: 16px;
     font-weight: 700;
     float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 40px);
 }
 
 .widget-title-icons {
@@ -109,16 +113,16 @@ body a:visited {
 }
 
 .widget-title-icons i:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .awe-borderline-gradient {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#29f2eb+1,42078c+100 */
     background: #29f2eb; /* Old browsers */
     background: -moz-linear-gradient(left, #29f2eb 1%, #42078c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #29f2eb 1%,#42078c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #29f2eb 1%,#42078c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29f2eb', endColorstr='#42078c',GradientType=1 ); /* IE6-9 */
+    background: -webkit-linear-gradient(left, #29f2eb 1%, #42078c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #29f2eb 1%, #42078c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#29f2eb', endColorstr='#42078c', GradientType=1); /* IE6-9 */
     height: 1px;
 }
 
@@ -134,24 +138,51 @@ body a:visited {
 }
 
 @-webkit-keyframes AweBorderlineAnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 51%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-moz-keyframes AweBorderlineAnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 51%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @-o-keyframes AweBorderlineAnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 51%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
+
 @keyframes AweBorderlineAnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 51%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .widget-item-max-title {
@@ -178,16 +209,20 @@ body a:visited {
     width: 5px;
     height: 12px;
 }
+
 .scroller::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
+
 .scroller::-webkit-scrollbar-thumb {
     background: #555;
-    visibility:hidden;
+    visibility: hidden;
 }
+
 .scroller:hover::-webkit-scrollbar-thumb {
-    visibility:visible;
+    visibility: visible;
 }
+
 .scroller {
     overflow-y: scroll;
     height: 100%;
@@ -207,8 +242,6 @@ body a:visited {
     color: red;
 }
 
-
-
 .ratio {
     background-position: center center;
     background-repeat: no-repeat;
@@ -219,9 +252,11 @@ body a:visited {
     position: relative;
     width: 100%;
 }
+
 .img-circle {
     border-radius: 50%;
 }
+
 .img-responsive {
     display: block;
     height: auto;
@@ -284,14 +319,27 @@ body a:visited {
 }
 
 @keyframes slideout {
-    0% { top: 100px; display: -webkit-box;}
-    99% { top: 26px; display: -webkit-box;}
-    100% { top: 26px; display: none; }
+    0% {
+        top: 100px;
+        display: -webkit-box;
+    }
+    99% {
+        top: 26px;
+        display: -webkit-box;
+    }
+    100% {
+        top: 26px;
+        display: none;
+    }
 }
 
 @keyframes pulseRed {
-    0% { box-shadow: 0px 0px 10px red; }
-    100% { box-shadow: 0px 0px 0px red; }
+    0% {
+        box-shadow: 0px 0px 10px red;
+    }
+    100% {
+        box-shadow: 0px 0px 0px red;
+    }
 }
 
 .widget-notification-hide {
