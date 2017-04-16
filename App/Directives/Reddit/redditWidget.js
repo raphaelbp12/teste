@@ -10,11 +10,32 @@ angular.module('App').directive('redditWidget', function () {
             'newPosts': '='
         },
         'controller': function redditWidgetController($scope,RedditService) {
+            $scope.redditService = RedditService;
+
+            $scope.topics = ['hot', 'new', 'top', 'rising', 'controversial', 'gilded', 'promoted'];
+            $scope.selectedTopic = 'hot';
+
             $scope.randomId = Math.floor((Math.random()*10000)+1);
+
+            $scope.showMenu = false;
+
+            $scope.triggerMenu = function () {
+                $scope.showMenu = !$scope.showMenu;
+            };
+
+            $scope.changeTopic = function (topic) {
+                RedditService.changeTopic($scope.subreddit, topic);
+                $scope.triggerMenu();
+            };
+
+            $scope.showNotification = function(eleId){
+                RedditService.showNotification($scope.subreddit);
+                $('#'+eleId).scrollTop(0);
+            };
 
             $scope.pagination = function () {
                 RedditService.pagination($scope.subreddit);
-            }
+            };
         }
     }
 });

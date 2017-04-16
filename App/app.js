@@ -15,9 +15,9 @@ angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService'
 
     $scope.redditService = RedditService;
 
-    $scope.redditService.getSubreddit('GlobalOffensive', 'hot', '', false);
-    $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'hot', '', false);
-    $scope.redditService.getSubreddit('KerbalSpaceProgram', 'hot', '', false);
+    $scope.redditService.getSubreddit('GlobalOffensive', 'new', '', false);
+    $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'new', '', false);
+    $scope.redditService.getSubreddit('KerbalSpaceProgram', 'new', '', false);
 
     $scope.intervalo = $interval(function() {
         $scope.twitchService.getChannels();

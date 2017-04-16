@@ -2,17 +2,23 @@
     <div class="widget-title-text"><i class="fa fa-reddit-alien" aria-hidden="true" style="margin-right: 10px"></i>
         {{title}}
     </div>
-    <div class="widget-title-icons"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></div>
+    <div class="widget-title-icons"><i class="fa fa-ellipsis-v" aria-hidden="true" ng-click="triggerMenu()"></i></div>
 </div>
 <div class="awe-borderline-gradient-animated"></div>
 <div class="scroller" id="{{ randomId }}">
-    <!--<pre>{{ newPosts }}</pre>-->
-    <!--<pre>{{ after }}</pre>-->
-    <ul class="widget-list-group" infinite-scroll="pagination()" infinite-scroll-distance="0.5" infinite-scroll-parent>
+    <div ng-class="(newPosts.length > 0) && (!showMenu)  ? 'widget-notification-show' : 'widget-notification-hide'" ng-click="showNotification(randomId)">
+        <div class="widget-new-posts">{{ newPosts.length }} New Posts</div>
+    </div>
+    <ul class="widget-list-group"  ng-class="showMenu ? 'menu-show':'menu-hide'" infinite-scroll="pagination()" infinite-scroll-distance="0.5" infinite-scroll-parent>
         <li class="widget-list-item" ng-repeat="post in posts">
             <div class="row" style="margin: -10px;">
                 <reddit-feed-item post="post"></reddit-feed-item>
             </div>
         </li>
     </ul>
+    <div class="widget-menu" ng-class="showMenu ? 'menu-show':'menu-hide'">
+        <div class="widget-menu-content">
+            <div class="widget-menu-item" ng-repeat="item in topics" ng-click="changeTopic(item)">{{ item }}</div>
+        </div>
+    </div>
 </div>
