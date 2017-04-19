@@ -1,10 +1,22 @@
-angular.module('App').service('RedditService', ['RedditRestangular', function (RedditRestangular) {
+angular.module('App').service('RedditService', ['RedditRestangular', '$q', function (RedditRestangular, $q) {
 
     var self = this;
+
 
     self.loading = false;
 
     self.data = [];
+
+    self.getSubredditObjectWithIndex = function(subreddit){
+        var ret = {}
+        self.data.forEach(function (data, indexData) {
+            if (data.subreddit && data.subreddit === subreddit) {
+                ret = {data: data, index: indexData};
+            }
+        });
+
+        return ret;
+    };
 
     self.getUpdate = function(subreddit){
         self.data.forEach(function (data) {
@@ -32,14 +44,21 @@ angular.module('App').service('RedditService', ['RedditRestangular', function (R
 
     self.pagination = function(subreddit){
 
-        self.data.forEach(function (data) {
-            if (data.subreddit && data.subreddit === subreddit) {
-                if(!self.loading){
-                    //console.log('pagination');
-                    self.getSubreddit(data.subreddit, data.topic, data.after[data.after.length - 1], true);
-                }
-            }
-        });
+        var deferred = $q.defer();
+        //console.log('pagination called');
+
+        var subredditWithIndex = self.getSubredditObjectWithIndex(subreddit);
+        //console.log('subredditWithIndex', subredditWithIndex);
+
+        deferred.resolve(
+            //console.log('pagination');
+            self.getSubreddit(subredditWithIndex.data.subreddit, subredditWithIndex.data.topic, subredditWithIndex.data.after[subredditWithIndex.data.after.length - 1], true).then(function(data){
+                //console.log('pagination', data);
+                return data;
+            })
+        );
+
+        return deferred.promise;
     };
 
     self.showNotification = function (subreddit) {
@@ -56,23 +75,29 @@ angular.module('App').service('RedditService', ['RedditRestangular', function (R
 
     self.getSubreddit = function (subreddit, topic, after, pagination) {
         //console.log("reddit called");
+
+        var deferred = $q.defer();
+
         var predata = {};
-        self.loading = true;
 
-        RedditRestangular.all(subreddit).customGET(topic+'.json', {'after': after}).then(function(response) {
-            //console.log('response.data', response.data);
-            var found = false;
-            predata.children = response.data.children;
-            predata.before = response.data.before;
-            predata.after = ['', response.data.after];
-            predata.subreddit = subreddit;
-            predata.topic = topic;
-            predata.newPosts = [];
+        deferred.resolve(
+            RedditRestangular.all(subreddit).customGET(topic+'.json', {'after': after}).then(function(response) {
+                //console.log('response.data', response.data);
+                var found = false;
+                predata.children = response.data.children;
+                predata.before = response.data.before;
+                predata.after = ['', response.data.after];
+                predata.subreddit = subreddit;
+                predata.topic = topic;
+                predata.newPosts = [];
 
-            self.loading = false;
+                self.addPosts(predata, pagination);
+                //console.log('getSubreddit', predata);
+                return predata;
+            })
+        );
 
-            self.addPosts(predata, pagination);
-        });
+        return deferred.promise;
     };
 
     self.addPosts = function (posts, pagination){

@@ -28,15 +28,14 @@
         <!--&lt;!&ndash;<pre>{{ twitchService }}</pre>&ndash;&gt;-->
     <!--</div>-->
     <div class="row" style="height: 100%; margin: 0px;">
-        <div class="twitch-widget widget-awe" title="Twitch" streams="twitchService.streams"></div>
-        <div class="reddit-widget widget-awe" ng-repeat="data in redditService.data" title="{{ data.subreddit }}" posts="data.children" new-posts="data.newPosts" subreddit="{{ data.subreddit }}" after="data.after" topic="{{data.topic}}"></div>
+        <widget-generator ng-repeat="widget in widgets" widget="widget"></widget-generator>
     </div>
 </div>
 
 <script src="libs/jquery/jquery.js"></script>
 <script src="libs/angular/angular.min.js"></script>
 <script src="libs/angular-auto-validate/dist/jcs-auto-validate.min.js"></script>
-<script src="libs/ladda/dist/spin.min.js"></script>
+<script src="libs/spin.js/spin.js"></script>
 <script src="libs/ladda/dist/ladda.min.js"></script>
 <script src="libs/angular-ladda/dist/angular-ladda.min.js"></script>
 <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
@@ -44,6 +43,7 @@
 <script src="libs/angular-timeago-master/dist/angular-timeago-core.min.js"></script>
 <script src="libs/angular-timeago-master/src/languages/time-ago-language-en_US.js"></script>
 <script src="libs/ngInfiniteScroll/ng-infinite-scroll.min.js"></script>
+<script src="libs/angular-spinner/angular-spinner.min.js"></script>
 
 <script src="App/Constants/twitch.js"></script>
 
@@ -56,6 +56,7 @@
 <script src="App/Directives/Reddit/redditWidget.js"></script>
 <script src="App/Directives/Twitch/twitchFeedItem.js"></script>
 <script src="App/Directives/Twitch/twitchWidget.js"></script>
+<script src="App/Directives/WidgetGenerator/widgetGenerator.js"></script>
 
 
 </body>

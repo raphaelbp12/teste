@@ -1,4 +1,5 @@
 angular.module('App', [
+    'angularSpinner',
 	'angular-ladda',
     'restangular',
     'yaru22.angular-timeago',
@@ -9,21 +10,19 @@ angular.module('App', [
     var a = 0;
 });
 
-angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService', '$scope', '$interval', function (TwitchService, RedditService, $scope, $interval) {
+angular.module('App').controller('MinMaxCtrl', ['TwitchService', '$scope', '$interval', '$rootScope', function (TwitchService, $scope, $interval, $rootScope) {
     $scope.twitchService = TwitchService;
     $scope.twitchService.getChannels();
 
-    $scope.redditService = RedditService;
-
-    $scope.redditService.getSubreddit('GlobalOffensive', 'new', '', false);
-    $scope.redditService.getSubreddit('PUBATTLEGROUNDS', 'new', '', false);
-    $scope.redditService.getSubreddit('KerbalSpaceProgram', 'new', '', false);
+    $scope.widgets = [
+        {type: 'twitch-widget', data:{title: 'Twitch'} },
+        {type: 'reddit-widget', data:{subreddit: 'GlobalOffensive'} },
+        {type: 'reddit-widget', data:{subreddit: 'PUBATTLEGROUNDS'} },
+        {type: 'reddit-widget', data:{subreddit: 'KerbalSpaceProgram'} }
+    ];
 
     $scope.intervalo = $interval(function() {
         $scope.twitchService.getChannels();
-        $scope.redditService.getUpdate('GlobalOffensive');
-        $scope.redditService.getUpdate('PUBATTLEGROUNDS');
-        $scope.redditService.getUpdate('KerbalSpaceProgram');
     }, 20000);
 
     $scope.search = function () {
@@ -37,8 +36,4 @@ angular.module('App').controller('MinMaxCtrl', ['TwitchService', 'RedditService'
     };
 
     $scope.intervalo;
-
-    $scope.pagination =function () {
-        console.log("$scope.pagination");
-    }
 }]);

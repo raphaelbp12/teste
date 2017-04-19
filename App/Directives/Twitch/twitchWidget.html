@@ -5,7 +5,7 @@
     </div>
     <div class="awe-borderline-gradient-animated"></div>
     <ul class="widget-list-group scroller"  infinite-scroll="redditService.pagination()" infinite-scroll-distance="1">
-        <li class="widget-list-item" ng-repeat="stream in streams track by $index" >
+        <li class="widget-list-item" ng-repeat="stream in twitchService.streams track by $index" >
             <div class="row" style="margin: -10px;">
                 <twitch-feed-item stream="stream"></twitch-feed-item>
             </div>

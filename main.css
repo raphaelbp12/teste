@@ -388,3 +388,16 @@ body a:visited {
     font-size: 17px;
     cursor: pointer;
 }
+
+.span-spinner {
+    position: relative;
+    display: -webkit-inline-box;
+}
+
+.spinner {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    color: #fff;
+}

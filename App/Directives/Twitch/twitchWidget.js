@@ -3,8 +3,12 @@ angular.module('App').directive('twitchWidget', function () {
         'restrict': 'AEC',
         'templateUrl': './App/Directives/Twitch/twitchWidget.html',
         'scope': {
-            'streams': '=',
-            'title': '@'
+            'content': '='
+        },
+        'controller': function twitchWidgetController($scope,TwitchService, $interval) {
+            $scope.twitchService = TwitchService;
+
+            $scope.title = $scope.content.title;
         }
     }
 });
